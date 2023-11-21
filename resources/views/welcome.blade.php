@@ -6,7 +6,7 @@
 
 <!-- Content of the page -->
 @section('content')
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images\Gyula-Benczúr-The-Recapture-of-Buda-Castle-in-1686-1896.jpg?auto=yes" class="d-block w-100" alt="First Slide">
