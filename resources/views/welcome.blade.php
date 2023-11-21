@@ -2,7 +2,7 @@
 @extends('master')
 
 <!-- Give the title of the page -->
-@section('title', 'Homepage')
+@section('title', 'ArtPlacer')
 
 <!-- Content of the page -->
 @section('content')
