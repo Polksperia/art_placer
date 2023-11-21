@@ -17,3 +17,4 @@ use App\Http\Controllers\LoginController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'showLoginForm']);
+Route::get('/register', [RegisterController::class, 'showRegisForm']);

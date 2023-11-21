@@ -15,11 +15,15 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleFormControlInput2"></input>
+                <label for="exampleFormControlInput2" class="form-label">Create password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput2">
             </div>
-            <a href="#" class="btn btn-primary">Login</a>
-            <a href="/register" class="btn btn-primary">Register</a>
+            <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Verify password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput3"></input>
+            </div>
+            <a href="#" class="btn btn-primary">Register</a>
+            <p class="text">Already have an account? Click <a href="/login">here to Login</a></p>
         </div>
     </div>
 </div>
