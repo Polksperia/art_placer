@@ -3,19 +3,19 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" href="/login">Login</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="/#">Contact</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">About ArtPlacer</a>
+        <a class="nav-link" href="/#">About ArtPlacer</a>
       </li>
     </ul>
   </div>
