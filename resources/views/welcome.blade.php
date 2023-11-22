@@ -18,15 +18,15 @@
                 <img src="images\Katsushika-Hokusai-The-Great-Wave-off-Kanagawa-1831.jpg?auto=yes" class="d-block responsive-image" alt="Third Slide">
             </div>
         </div>
+    </div>
 
-        <div class="position-absolute top-50 start-50 translate-middle text-center">
-            <div class="bg-light p-4 rounded">
-                <h1 class="font-weight-bold text-uppercase" style="font-family: 'Squada One', sans-serif;">ArtPlacer</h1>
-                <div class="d-grid gap-2">
-                    <a href="#" class="btn btn-primary">Play Now</a>
-                    <a href="#" class="btn btn-primary">Leaderboard</a>
-                    <a href="#" class="btn btn-primary">Playsets</a>
-                </div>
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <div class="bg-dark text-white p-4 rounded">
+            <h1 class="font-weight-bold text-uppercase" style="font-family: 'Squada One', sans-serif;">ArtPlacer</h1>
+            <div class="d-grid gap-2">
+                <a href="#" class="btn btn-primary">Play Now</a>
+                <a href="#" class="btn btn-primary">Leaderboard</a>
+                <a href="#" class="btn btn-primary">Playsets</a>
             </div>
         </div>
     </div>

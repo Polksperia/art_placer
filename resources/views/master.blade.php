@@ -19,27 +19,10 @@
         <!-- Styles -->
         <style>
             .responsive-image {
-                max-width: 100%;
                 height: auto;
-                width: auto;
-                max-height: 100%; /* Set maximum height to viewport height */
+                width: 100vw;
+                display: block;
                 margin: 0 auto; /* Center the image horizontally */
-            }
-            
-            @media (min-aspect-ratio: 1/1) {
-                /* When viewport is wider than the image */
-                .responsive-image {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-
-            @media (max-aspect-ratio: 1/1) {
-                /* When viewport is taller than the image */
-                .responsive-image {
-                    height: 100%;
-                    width: auto;
-                }
             }
         </style>
     </head>
