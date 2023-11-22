@@ -18,6 +18,29 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <!-- Styles -->
         <style>
+            .responsive-image {
+                max-width: 100%;
+                height: auto;
+                width: auto;
+                max-height: 100%; /* Set maximum height to viewport height */
+                margin: 0 auto; /* Center the image horizontally */
+            }
+            
+            @media (min-aspect-ratio: 1/1) {
+                /* When viewport is wider than the image */
+                .responsive-image {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            @media (max-aspect-ratio: 1/1) {
+                /* When viewport is taller than the image */
+                .responsive-image {
+                    height: 100%;
+                    width: auto;
+                }
+            }
         </style>
     </head>
     <body>
@@ -25,7 +48,7 @@
         <header>
 
         </header>
-        <div class='container-fluid'>
+        <div>
             @yield('content')
         </div>
         <footer>

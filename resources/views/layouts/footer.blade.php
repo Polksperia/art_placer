@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
   <div class="container collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
 
     <ul class="navbar-nav">
@@ -9,13 +9,13 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/#">Contact</a>
+        <a class="nav-link" href="/#">About ArtPlacer</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/#">About ArtPlacer</a>
+        <a class="nav-link" href="/#">Contact Us</a>
       </li>
     </ul>
   </div>
