@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -17,15 +16,22 @@
         
         <!-- Scripts -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc7Po3uKrdHo98hjS79JeLaVATbPj_TkA&callback=initMap" async defer></script>
+        <script>
+            // Function to initialize the map
+            function initMap() {
+                const center = { lat: 41.90476224706472, lng: 12.49822074385094 };
+                const zoom = 14;
+
+                // Initialize the map
+                const map = new google.maps.Map(document.getElementById('map'), {
+                    center: center,
+                    zoom: zoom,
+                });
+            }
+        </script>
         <!-- Styles -->
         <style>
-            .responsive-image {
-                height: auto;
-                width: 100vw;
-                display: block;
-                margin: 0 auto; /* Center the image horizontally */
-            }
         </style>
     </head>
     <body>
@@ -37,7 +43,6 @@
             @yield('content')
         </div>
         <footer>
-            @include('layouts.footer')
         </footer>
     </body>
 </html>

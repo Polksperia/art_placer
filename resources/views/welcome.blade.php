@@ -1,11 +1,9 @@
-<!-- Connect with the master template view -->
 @extends('master')
 
-<!-- Give the title of the page -->
 @section('title', 'ArtPlacer')
 
-<!-- Content of the page -->
 @section('content')
+    <!-- Main Screen -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -24,13 +22,10 @@
         <div class="bg-dark text-white p-4 rounded">
             <h1 class="font-weight-bold text-uppercase" style="font-family: 'Squada One', sans-serif;">ArtPlacer</h1>
             <div class="d-grid gap-2">
-                <a href="#" class="btn btn-primary">Play Now</a>
+                <a href="/game" class="btn btn-primary">Play Now</a>
                 <a href="#" class="btn btn-primary">Leaderboard</a>
                 <a href="#" class="btn btn-primary">Playsets</a>
             </div>
         </div>
     </div>
-
-
-    <!-- This is section for homepage -->
 @endsection

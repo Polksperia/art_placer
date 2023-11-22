@@ -1,10 +1,7 @@
-<!-- Connect with the master template view -->
 @extends('master')
 
-<!-- Give the title of the page -->
 @section('title', 'Login')
 
-<!-- Content of the page -->
 @section('content')
 <div class="position-absolute top-50 start-50 translate-middle text-center">
     <div class="bg-dark text-white p-4 rounded">
