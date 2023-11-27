@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\AboutUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ use App\Http\Controllers\LoginController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'showLoginForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
+Route::get('/aboutUs', [AboutUsController::class, 'aboutUs']);
