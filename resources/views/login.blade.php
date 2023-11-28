@@ -19,7 +19,7 @@
                 <input type="password" class="form-control" id="exampleFormControlInput2"></input>
             </div>
             <a href="#" class="btn btn-primary">Login</a>
-            <a href="/register" class="btn btn-primary">Register</a>
+            <a href="register" class="btn btn-primary">Register</a>
         </div>
     </div>
 </div>
