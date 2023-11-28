@@ -20,24 +20,39 @@
         <script>
             // Function to initialize the map
             function initMap() {
-                const center = { lat: 41.90476224706472, lng: 12.49822074385094 };
-                const zoom = 14;
+                const center = { lat: -50.915336, lng: 24.247445 };
+                const zoom = 2;
 
                 // Initialize the map
                 const map = new google.maps.Map(document.getElementById('map'), {
                     center: center,
                     zoom: zoom,
                 });
+
+                map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(document.getElementById('map-container'));
             }
         </script>
         <!-- Styles -->
         <style>
+            #map-container {
+                position: fixed;
+                width: 300px; /* Set the width of the map */
+                height: 200px; /* Set the height of the map */
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            #map {
+                width: 100%;
+                height: 100%;
+            }   
         </style>
     </head>
     <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <header>
-
+            @include('layouts.header')
         </header>
         <div>
             @yield('content')
