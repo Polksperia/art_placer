@@ -21,7 +21,7 @@
             // Function to initialize the map
             function initMap() {
                 const center = { lat: 41.90476224706472, lng: 12.49822074385094 };
-                const zoom = 14;
+                const zoom = 1;
 
                 // Initialize the map
                 const map = new google.maps.Map(document.getElementById('map'), {
@@ -37,7 +37,7 @@
     <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <header>
-
+            @include('layouts.header')
         </header>
         <div>
             @yield('content')
