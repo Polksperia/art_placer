@@ -34,6 +34,7 @@
         <header>
 
         </header>
+        <body style="background-color:#313538;">
         <div>
             @yield('content')
         </div>

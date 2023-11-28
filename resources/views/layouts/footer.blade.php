@@ -9,7 +9,7 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link text-white" href="/#">About ArtPlacer</a>
+        <a class="nav-link text-white" href="/aboutUs">About ArtPlacer</a>
       </li>
     </ul>
 
