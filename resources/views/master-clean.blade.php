@@ -22,13 +22,13 @@
             function initMap() {
                 const center = { lat: -50.915336, lng: 24.247445 };
                 const zoom = 2;
-
+                
                 // Initialize the map
                 const map = new google.maps.Map(document.getElementById('map'), {
                     center: center,
                     zoom: zoom,
                 });
-
+                
                 map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(document.getElementById('map-container'));
             }
         </script>
@@ -42,7 +42,7 @@
                 border-radius: 5px;
                 overflow: hidden;
             }
-
+            
             #map {
                 width: 100%;
                 height: 100%;
