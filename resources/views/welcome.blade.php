@@ -1,5 +1,7 @@
 @extends('master')
+
 @section('title', 'ArtPlacer')
+
 @section('content')
     <!-- Main Screen -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -26,5 +28,4 @@
             </div>
         </div>
     </div>
-
 @endsection

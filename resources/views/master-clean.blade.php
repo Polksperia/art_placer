@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -13,7 +13,7 @@
         <link rel="dns-prefetch" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-
+        
         <!-- Scripts -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc7Po3uKrdHo98hjS79JeLaVATbPj_TkA&callback=initMap" async defer></script>
@@ -22,11 +22,13 @@
             function initMap() {
                 const center = { lat: -50.915336, lng: 24.247445 };
                 const zoom = 2;
+                
                 // Initialize the map
                 const map = new google.maps.Map(document.getElementById('map'), {
                     center: center,
                     zoom: zoom,
                 });
+                
                 map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(document.getElementById('map-container'));
             }
         </script>
@@ -40,6 +42,7 @@
                 border-radius: 5px;
                 overflow: hidden;
             }
+            
             #map {
                 width: 100%;
                 height: 100%;
