@@ -13,6 +13,7 @@
         <link rel="dns-prefetch" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
         
         <!-- Scripts -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -34,10 +35,36 @@
         </script>
         <!-- Styles -->
         <style>
+            .secondary-bg {
+                background-color: #393D42;
+                border-radius: 50px;
+                box-shadow: 0 0 0 5px black;
+            }
+
+            .bg-form {
+                background-color: #D9D9D9;
+            }
+
+            .outlined-text {
+                text-shadow:
+                    -5px -5px 0 #000,
+                    5px -5px 0 #000,
+                    -5px 5px 0 #000,
+                    5px 5px 0 #000;
+            }
+
+            .outlined-text-small {
+                text-shadow:
+                    -3px -3px 0 #000,
+                    3px -3px 0 #000,
+                    -3px 3px 0 #000,
+                    3px 3px 0 #000;
+            }
+
             #map-container {
                 position: fixed;
-                width: 300px; /* Set the width of the map */
-                height: 200px; /* Set the height of the map */
+                width: 600px; /* Set the width of the map */
+                height: 400px; /* Set the height of the map */
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 overflow: hidden;
@@ -49,7 +76,7 @@
             }   
         </style>
     </head>
-    <body>
+    <body class="bg-dark">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <header>
             @include('layouts.header')
