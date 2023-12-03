@@ -12,11 +12,11 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">password</label>
-                <input class="form-control" id="exampleFormControlInput2"></input>
+                <label for="exampleFormControlInput2" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleFormControlInput2"></input>
             </div>
             <a href="#" class="btn btn-primary">Login</a>
-            <a href="#" class="btn btn-primary">Register</a>
+            <a href="register" class="btn btn-primary">Register</a>
         </div>
     </div>
 </div>

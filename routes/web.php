@@ -19,5 +19,6 @@ use App\Http\Controllers\AboutUsController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'showLoginForm']);
+Route::get('/register', [LoginController::class, 'showRegForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
 Route::get('/aboutUs', [AboutUsController::class, 'aboutUs']);
