@@ -28,7 +28,15 @@
 
             .main-bg {
                 background-color: rgba(33, 37, 41, 0.9);
-                border-radius: 20px;
+                border-radius: 50px;
+            }
+
+            .outlined-text {
+                text-shadow:
+                    -5px -5px 0 #000,
+                    5px -5px 0 #000,
+                    -5px 5px 0 #000,
+                    5px 5px 0 #000;
             }
         </style>
     </head>

@@ -35,6 +35,32 @@
         </script>
         <!-- Styles -->
         <style>
+            .secondary-bg {
+                background-color: #393D42;
+                border-radius: 50px;
+                box-shadow: 0 0 0 5px black;
+            }
+
+            .bg-form {
+                background-color: #D9D9D9;
+            }
+
+            .outlined-text {
+                text-shadow:
+                    -5px -5px 0 #000,
+                    5px -5px 0 #000,
+                    -5px 5px 0 #000,
+                    5px 5px 0 #000;
+            }
+
+            .outlined-text-small {
+                text-shadow:
+                    -3px -3px 0 #000,
+                    3px -3px 0 #000,
+                    -3px 3px 0 #000,
+                    3px 3px 0 #000;
+            }
+
             #map-container {
                 position: fixed;
                 width: 600px; /* Set the width of the map */
