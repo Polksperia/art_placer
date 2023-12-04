@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('painters', function (Blueprint $table) {
-            //
+            $table->string('image_link')->nullable()->after('wikipedia');
+            $table->timestamps();
         });
     }
 
@@ -22,7 +23,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('painters', function (Blueprint $table) {
-            //
+            $table->dropColumn('image_link');
+            $table->dropTimestamps();
         });
     }
 };

@@ -6,6 +6,7 @@ use App\Http\Controllers\GameController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Models\Painter;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,8 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'showLoginForm']);
 Route::get('/register', [LoginController::class, 'showRegForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
-Route::get('/painters', function () {
+Route::get('/testing', function () {
     $painters = Painter::all();
-    return view('painters')->with('painters', $painters);
+    $users = User::all();
+    return view('testing')->with('painters', $painters)->with('users', $users);;
 });
