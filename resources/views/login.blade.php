@@ -5,7 +5,7 @@
 @section('content')
 <div class="position-absolute top-50 start-50 translate-middle text-center">
     <div class="secondary-bg text-white py-4 px-5">
-        <h1 class="font-weight-bold mb-4 outlined-text" style="font-family: 'Squada One', sans-serif; font-size: 8rem;">Login</h1>
+        <h1 class="font-weight-bold mb-4 outlined-text-small" style="font-family: 'Squada One', sans-serif; font-size: 8rem;">Login</h1>
         <div class="d-grid gap-2">
             <div class="mb-2 col-lg-12 mx-auto">
                 <label for="exampleFormControlInput1" class="form-label" style="font-family: 'Days One', sans-serif; font-size: 2rem;">Email address</label>

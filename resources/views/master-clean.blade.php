@@ -42,6 +42,12 @@
                 box-shadow: 0 0 0 5px black;
             }
 
+            .small-bg {
+                background-color: #393D42;
+                box-shadow: 0 0 0 2px black;
+                display: inline-block;
+            }
+
             .bg-form {
                 background-color: #D9D9D9;
             }
@@ -60,6 +66,12 @@
                     3px -3px 0 #000,
                     -3px 3px 0 #000,
                     3px 3px 0 #000;
+            }
+
+            .query-container {
+                background-color: #393D42;
+                box-shadow: 0 0 0 5px black;
+                overflow: hidden;
             }
 
             #map-container {

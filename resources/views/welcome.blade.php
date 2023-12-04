@@ -9,13 +9,13 @@
     <!-- Main Screen -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active image-container">
                 <img src="images\Gyula-Benczúr-The-Recapture-of-Buda-Castle-in-1686-1896.jpg?auto=yes" class="d-block responsive-image" alt="First Slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item image-container">
                 <img src="images\Claude-Monet-Effect-of-Spring-Giverny-1890.jpg?auto=yes" class="d-block responsive-image" alt="Second Slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item image-container">
                 <img src="images\Katsushika-Hokusai-The-Great-Wave-off-Kanagawa-1831.jpg?auto=yes" class="d-block responsive-image" alt="Third Slide">
             </div>
         </div>
