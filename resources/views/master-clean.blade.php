@@ -36,6 +36,10 @@
         </script>
         <!-- Styles -->
         <style>
+            html {
+                font-size: 16px;
+            }
+
             .secondary-bg {
                 background-color: #393D42;
                 border-radius: 50px;
@@ -72,6 +76,18 @@
                 background-color: #393D42;
                 box-shadow: 0 0 0 5px black;
                 overflow: hidden;
+            }
+
+            .image-container {
+                height: 75vh;
+            }
+
+            .responsive-image {
+                height: 100%;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 2rem;
             }
 
             #map-container {

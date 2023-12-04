@@ -7,8 +7,11 @@
   <div class="row text-white">
     <div class="col-sm-8 p-0">
       <div class="query-container text-center">
-        <h1 class="font-weight-bold mb-4 outlined-text" style="font-family: 'Squada One', sans-serif; font-size: 4rem;">Guess!</h1>
-        <p>This rectangle fills the left half of the screen.</p>
+        <h1 class="font-weight-bold mb-4 outlined-text-small" style="font-family: 'Squada One', sans-serif; font-size: 4rem;">Guess!</h1>
+        <div class="image-container">
+          <img src="{{ $imageName }}" alt="Painter's Painting" class="responsive-image">
+        </div>
+        <p>This is {{ $painter->name }} , {{ $imageName }}</p>
       </div>
     </div>
     <div class="col-sm-4 justify-content-end">

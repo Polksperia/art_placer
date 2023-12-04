@@ -18,7 +18,7 @@ class ImageLinkSeeder extends Seeder
         foreach ($painters as $painter) {
             $folderName = str_replace(' ', '_', $painter->name);
             $folderName = str_replace('ü', 'u¦ê', $folderName);
-            $imageLink = "images/{$folderName}";
+            $imageLink = "images\\{$folderName}";
 
             $painter->image_link = $imageLink;
             $painter->save();
