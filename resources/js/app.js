@@ -1,5 +1,3 @@
 import './bootstrap';
 
-$(document).ready(function(){
-    $('.carousel').carousel();
-});
+document.addEventListener("DOMContentLoaded", customizeMap);
