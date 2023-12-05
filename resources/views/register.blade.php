@@ -24,7 +24,7 @@
             </div>
             <div class="d-grid gap-3 col-6 mx-auto"> <!-- Adjust the width by changing the col-8 class -->
                 <a href="register" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1rem; font-family: 'Days One', sans-serif;">Register</a>
-                <a href="#" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1rem; font-family: 'Days One', sans-serif;">Login</a>
+                <a href="login" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1rem; font-family: 'Days One', sans-serif;">Login</a>
             </div>
         </div>
     </div>
