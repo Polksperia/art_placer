@@ -6,6 +6,34 @@
 @endsection
 
 @section('content')
+    <!-- CSS Styling -->
+    <style>
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #myCarousel {
+            height: 100%;
+        }
+
+        .carousel-inner, .carousel-item {
+            height: 100%;
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .position-absolute {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
     <!-- Main Screen -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-inner">

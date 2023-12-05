@@ -8,13 +8,13 @@
 
     <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link text-white" style="font-family: 'Inter', sans-serif; font-size: 1.5rem;" href="/#">About ArtPlacer</a>
+        <a class="nav-link text-white" style="font-family: 'Inter', sans-serif; font-size: 1.5rem;" href="/about-us">About ArtPlacer</a>
       </li>
     </ul>
 
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link text-white" style="font-family: 'Inter', sans-serif; font-size: 1.5rem;" href="/#">Contact Us</a>
+        <a class="nav-link text-white" style="font-family: 'Inter', sans-serif; font-size: 1.5rem;" href="/about-us">Contact Us</a>
       </li>
     </ul>
   </div>
