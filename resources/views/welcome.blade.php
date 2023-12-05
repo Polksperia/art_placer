@@ -55,10 +55,10 @@
             <div class="d-grid gap-4 col-6 mx-auto">
                 <a href="/game" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
                 font-family: 'Days One', sans-serif;">Play Now</a>
-                <a href="#" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
+                <a href="/leaderboard" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
                 font-family: 'Days One', sans-serif;">Leaderboard</a>
-                <a href="#" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
-                font-family: 'Days One', sans-serif;">Playsets</a>
+                <!-- <a href="#" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
+                font-family: 'Days One', sans-serif;">Playsets</a> -->
             </div>
         </div>
     </div>
