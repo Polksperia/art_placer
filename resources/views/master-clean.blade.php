@@ -14,31 +14,29 @@
         <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+        <link rel ="icon" href ="\images\artplacer-icon.png" type ="image/x-icon"> 
         
         <!-- Scripts -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc7Po3uKrdHo98hjS79JeLaVATbPj_TkA&callback=initMap" async defer></script>
         <script>
-            // Function to initialize the map
-            function initMap() {
-                const center = { lat: -50.915336, lng: 24.247445 };
-                const zoom = 2;
-                
-                // Initialize the map
-                const map = new google.maps.Map(document.getElementById('map'), {
-                    center: center,
-                    zoom: zoom,
-                });
-                
-                map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(document.getElementById('map-container'));
-            }
         </script>
         <!-- Styles -->
         <style>
+            html {
+                font-size: 16px;
+            }
+
             .secondary-bg {
                 background-color: #393D42;
                 border-radius: 50px;
                 box-shadow: 0 0 0 5px black;
+            }
+
+            .small-bg {
+                background-color: #393D42;
+                box-shadow: 0 0 0 2px black;
+                display: inline-block;
             }
 
             .bg-form {
@@ -59,6 +57,24 @@
                     3px -3px 0 #000,
                     -3px 3px 0 #000,
                     3px 3px 0 #000;
+            }
+
+            .query-container {
+                background-color: #393D42;
+                box-shadow: 0 0 0 5px black;
+                overflow: hidden;
+            }
+
+            .image-container {
+                height: 75vh;
+            }
+
+            .responsive-image {
+                height: 100%;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+                padding-bottom: 2rem;
             }
 
             #map-container {

@@ -45,7 +45,7 @@
           </div>
           <div class="mb-3" style="text-align: left;">
             <label for="exampleFormControlInput1" class="form-label">Subject :</label>
-            <input type="email" class="form-control bg-from" id="exampleFormControlInput1">
+            <input type="email" class="form-control bg-form" id="exampleFormControlInput1">
           </div>
           <div class="mb-3" style="text-align: left;">
             <label for="exampleFormControlTextarea1" class="form-label">Comment :</label>
