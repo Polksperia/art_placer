@@ -19,13 +19,13 @@
         <div class="image-container">
           <img src="{{ $imageName }}" alt="Painter's Painting" class="responsive-image">
         </div>
-        <p>This is {{ $painter->name }} , {{ $painter->nationality }}</p>
         <p>Selected Country: <span id="selectedCountryName"></span></p>
       </div>
     </div>
     <div class="col-sm-4 text-center" style="padding-top: 10rem;">
       <div class="small-bg rounded px-4">
-        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Which country did this painting come from?</p>
+        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Correct!</p>
+        <p style="font-size: 1rem;font-family: 'Inter', sans-serif;">Correct!</p>
       </div>
     </div>
   </div>
@@ -35,8 +35,6 @@
 </div>
 
 <script>
-    var comparisonString = '{{ $painter->nationality }}';
-  
     // Function to initialize the map
     function initMap() {
                 const center = { lat: -50.915336, lng: 24.247445 };
@@ -146,13 +144,5 @@
 
                 var selectedCountry = document.getElementById('selectedCountryName').textContent;
             }
-
-    function compare(selectedCountry){
-      if (selectedCountry === comparisonString) {
-          window.location.href = '/matched'; // Redirect if the comparison matches
-      } else {
-          window.location.href = '/not-matched'; // Redirect if the comparison does not match
-      }
-    }
 </script>
 @endsection
