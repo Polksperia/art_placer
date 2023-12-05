@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
-    private $painter;
+    public $painter;
     private $imageName;
 
     public function gameScreen()
@@ -22,7 +22,10 @@ class GameController extends Controller
 
         $this->imageName = "{$this->painter->image_link}\\{$nameUnderscore}_{$randomImageNumber}.jpg";
 
-        return view('game')->with(compact("painter", "imageName"));
+        return view('game', [
+            'painter' => $this->painter,
+            'imageName' => $this->imageName
+        ]);
     }
 }
 //public\images\Amedeo_Modigliani\Amedeo_Modigliani_5.jpg

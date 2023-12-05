@@ -19,7 +19,6 @@
         <div class="image-container">
           <img src="{{ $imageName }}" alt="Painter's Painting" class="responsive-image">
         </div>
-        <p>This is {{ $painter->name }} , {{ $painter->nationality }}</p>
         <p>Selected Country: <span id="selectedCountryName"></span></p>
       </div>
     </div>
