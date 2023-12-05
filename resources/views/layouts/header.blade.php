@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -6,4 +6,4 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav>  

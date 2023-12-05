@@ -19,6 +19,15 @@
 
         <!-- Styles -->
         <style>
+            html {
+                font-size: 16px;
+            }
+
+            .image-container {
+                height: 100vh;
+                overflow: hidden;
+            }
+
             .responsive-image {
                 height: auto;
                 width: 100vw;
