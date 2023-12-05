@@ -4,14 +4,6 @@
 
 @section('content')
 <div class="container-fluid position-relative text-white">
-  <div class="position-absolute top-0 end-0">
-    <div class="d-flex justify-content-end">
-      <div class="small-bg rounded px-4">
-        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Streak:</p>
-        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">0</p>
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="col-sm-8 p-0">
       <div class="query-container text-center">
@@ -19,13 +11,13 @@
         <div class="image-container">
           <img src="{{ $imageName }}" alt="Painter's Painting" class="responsive-image">
         </div>
-        <p>This is {{ $painter->name }} , {{ $painter->nationality }}</p>
         <p>Selected Country: <span id="selectedCountryName"></span></p>
       </div>
     </div>
     <div class="col-sm-4 text-center" style="padding-top: 10rem;">
       <div class="small-bg rounded px-4">
         <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Which country did this painting come from?</p>
+        <p>This is {{ $painter->name }} , alive on the year {{ $painter->years }}</p>
       </div>
     </div>
   </div>
