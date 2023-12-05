@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\LeaderboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::get('/login', [LoginController::class, 'showLoginForm']);
 Route::get('/register', [LoginController::class, 'showRegForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
 Route::get('/about-us', [AboutUsController::class, 'index']);
+Route::get('/leaderboard', [LeaderboardController::class, 'index']);
