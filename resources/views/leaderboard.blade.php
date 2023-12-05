@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-<div class="container" style="margin-top:150px;">
+<div class="container" style="margin-top:100px;">
   <div class="row justify-content-center">
     <div class="col-md-8">
       <table class="table table-dark">
@@ -23,15 +23,15 @@
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td style="background-color: #212529;">name@example.com</td>
+            <td style="background-color: #212529;">otto@gmail.com</td>
             <td style="background-color: #212529;">Otto</td>
             <td style="background-color: #212529;">32</td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td style="background-color: #212529;"></td>
-            <td style="background-color: #212529;"></td>
-            <td style="background-color: #212529;"></td>
+            <td style="background-color: #212529;">hmm@gmail.com</td>
+            <td style="background-color: #212529;">ApaKek</td>
+            <td style="background-color: #212529;">13</td>
           </tr>
           <tr>
             <th scope="row">3</th>
