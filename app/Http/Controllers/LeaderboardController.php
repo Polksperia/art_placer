@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class LeaderboardController extends Controller
 {
-    public function index(){
+    public function showLeaderboard(){
         return view('leaderboard');
     }
 }

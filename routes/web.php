@@ -22,5 +22,5 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/login', [LoginController::class, 'showLoginForm']);
 Route::get('/register', [LoginController::class, 'showRegForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
-Route::get('/about-us', [AboutUsController::class, 'index']);
-Route::get('/leaderboard', [LeaderboardController::class, 'index']);
+Route::get('/about-us', [AboutUsController::class, 'showAboutUs']);
+Route::get('/leaderboard', [LeaderboardController::class, 'showLeaderboard']);
