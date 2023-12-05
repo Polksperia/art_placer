@@ -20,19 +20,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc7Po3uKrdHo98hjS79JeLaVATbPj_TkA&callback=initMap" async defer></script>
         <script>
-            // Function to initialize the map
-            function initMap() {
-                const center = { lat: -50.915336, lng: 24.247445 };
-                const zoom = 2;
-                
-                // Initialize the map
-                const map = new google.maps.Map(document.getElementById('map'), {
-                    center: center,
-                    zoom: zoom,
-                });
-                
-                map.controls[google.maps.ControlPosition.BOTTOM_RIGHT].push(document.getElementById('map-container'));
-            }
         </script>
         <!-- Styles -->
         <style>

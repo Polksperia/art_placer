@@ -2,21 +2,25 @@
 
 namespace App\Http\Controllers;
 use App\Models\Painter;
+use App\Models\User;
 
 use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
+    private $painter;
+    private $imageName;
+
     public function gameScreen()
     {
-        $painter = Painter::inRandomOrder()->first();
+        $this->painter = Painter::inRandomOrder()->first();
 
-        $randomImageNumber = rand(1, $painter->paintings);
+        $randomImageNumber = rand(1, $this->painter->paintings);
 
-        $nameUnderscore = str_replace(' ', '_', $painter->name);
+        $nameUnderscore = str_replace(' ', '_', $this->painter->name);
         $nameUnderscore = str_replace('ü', 'u¦ê', $nameUnderscore);
 
-        $imageName = "{$painter->image_link}\\{$nameUnderscore}_{$randomImageNumber}.jpg";
+        $this->imageName = "{$this->painter->image_link}\\{$nameUnderscore}_{$randomImageNumber}.jpg";
 
         return view('game')->with(compact("painter", "imageName"));
     }
