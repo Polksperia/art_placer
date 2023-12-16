@@ -27,3 +27,5 @@ Route::get('/register', [LoginController::class, 'showRegForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
 Route::get('/about-us', [AboutUsController::class, 'showAboutUs']);
 Route::get('/leaderboard', [LeaderboardController::class, 'showLeaderboard']);
+Route::get('/matched', [GameController::class, 'matched']);
+Route::get('/not-matched', [GameController::class, 'not_matched']);

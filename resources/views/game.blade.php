@@ -11,13 +11,13 @@
         <div class="image-container">
           <img src="{{ $imageName }}" alt="Painter's Painting" class="responsive-image">
         </div>
-        <p>Selected Country: <span id="selectedCountryName"></span></p>
       </div>
     </div>
-    <div class="col-sm-4 text-center" style="padding-top: 10rem;">
+    <div class="col-sm-4 text-center" style="padding-top: 5rem;">
       <div class="small-bg rounded px-4">
         <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Which country did this painting come from?</p>
         <p>This is {{ $painter->name }} , alive on the year {{ $painter->years }}</p>
+        <p>Selected Country: <span id="selectedCountryName"></span></p>
       </div>
     </div>
   </div>
