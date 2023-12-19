@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SessionController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\UserController;
 use App\Models\Painter;
@@ -18,7 +19,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [SessionController::class, 'index'])->name('root');
 Route::get('/login', [UserController::class, 'showLoginForm']);
 Route::get('/register', [UserController::class, 'showRegForm']);
 Route::post('/process-form', [UserController::class, 'processForm']);
@@ -37,3 +38,6 @@ Route::get('/testing', function () {
     $users = User::all();
     return view('testing')->with('painters', $painters)->with('users', $users);;
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
