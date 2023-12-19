@@ -20,6 +20,8 @@ use App\Models\User;
 */
 
 Route::get('/', [SessionController::class, 'index'])->name('root');
+Route::get('/about-us', [SessionController::class, 'showAboutUs']);
+Route::get('/leaderboard', [SessionController::class, 'showLeaderboard']);
 Route::get('/login', [UserController::class, 'showLoginForm']);
 Route::get('/register', [UserController::class, 'showRegForm']);
 Route::post('/process-form', [UserController::class, 'processForm']);

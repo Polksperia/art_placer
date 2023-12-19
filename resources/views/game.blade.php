@@ -4,14 +4,6 @@
 
 @section('content')
 <div class="container-fluid position-relative text-white">
-  <div class="position-absolute top-0 end-0">
-    <div class="d-flex justify-content-end">
-      <div class="small-bg rounded px-4">
-        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">Streak:</p>
-        <p style="font-size: 1.5rem;font-family: 'Days One', sans-serif;">0</p>
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="col-sm-8 p-0">
       <div class="query-container text-center">

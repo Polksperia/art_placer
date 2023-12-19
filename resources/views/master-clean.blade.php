@@ -12,8 +12,7 @@
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Days+One&family=Inter&family=Squada+One&display=swap" rel="stylesheet">
         <link rel ="icon" href ="\images\artplacer-icon.png" type ="image/x-icon"> 
         
         <!-- Scripts -->
