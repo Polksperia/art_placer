@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GameController;
-use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Models\Painter;
 use App\Models\User;
@@ -20,11 +19,19 @@ use App\Models\User;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/login', [LoginController::class, 'showLoginForm']);
-Route::get('/register', [LoginController::class, 'showRegForm']);
+Route::get('/login', [UserController::class, 'showLoginForm']);
+Route::get('/register', [UserController::class, 'showRegForm']);
+Route::post('/process-form', [UserController::class, 'processForm']);
 Route::get('/game', [GameController::class, 'gameScreen']);
 Route::get('/matched', [GameController::class, 'matched']);
-Route::get('/not-matched', [GameController::class, 'not_matched']);
+Route::get('/not-matched', [GameController::class, 'notMatched']);
+Route::get('/users/{user}', [UserController::class, 'user'])
+->name('users.show');
+Route::get('/users/{user}/edit', [UserController::class, 'userEdit'])
+->name('users.edit');
+Route::put('/users/{user}', [UserController::class, 'userUpdate']);
+Route::delete('/users/{user}', [UserController::class, 'userDelete'])
+->name('users.destroy');
 Route::get('/testing', function () {
     $painters = Painter::all();
     $users = User::all();

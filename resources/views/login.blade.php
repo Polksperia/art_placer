@@ -1,10 +1,10 @@
 @extends('master-clean')
 
-@section('title', 'Login')
+@section('title', 'ArtPlacer - Login')
 
 @section('content')
 <div class="position-absolute top-50 start-50 translate-middle text-center">
-    <div class="secondary-bg text-white py-4 px-5" style="width: 600px;">
+    <div class="secondary-bg text-white py-4 px-5" style="width: 35vw;">
         <h1 class="font-weight-bold mb-4 outlined-text-small" style="font-family: 'Squada One', sans-serif; font-size: 8rem;">Login</h1>
         <div class="d-grid gap-2">
             <div class="mb-2 col-lg-12 mx-auto">
@@ -18,7 +18,7 @@
             <div class="d-grid gap-4 col-6 mx-auto">
                 <a href="#" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
                 font-family: 'Days One', sans-serif;">Login</a>
-                <p class="text" style="font-family: 'Inter', sans-serif; font-size: 1.25rem;">Don't have an account? Click <a href="register">here to Register</a></p>
+                <p class="text" style="font-family: 'Inter', sans-serif; font-size: 1.25rem;">Don't have an account? Click <a href="{{ url('/register') }}">here to Register</a></p>
             </div>
         </div>
     </div>

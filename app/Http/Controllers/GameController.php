@@ -28,9 +28,9 @@ class GameController extends Controller
         return view('matched');
     }
 
-    public function not_matched()
+    public function notMatched()
     {
-        return view('not_matched');
+        return view('not-matched');
     }
 }
 //public\images\Amedeo_Modigliani\Amedeo_Modigliani_5.jpg
