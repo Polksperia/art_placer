@@ -66,7 +66,7 @@
             }
 
             .image-container {
-                height: 75vh;
+                height: 79vh;
             }
 
             .responsive-image {
