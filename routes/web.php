@@ -7,7 +7,6 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Models\Painter;
 use App\Models\User;
-use App\Http\Controllers\AboutUsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +30,3 @@ Route::get('/testing', function () {
     $users = User::all();
     return view('testing')->with('painters', $painters)->with('users', $users);;
 });
-Route::get('/about-us', [AboutUsController::class, 'index']);
