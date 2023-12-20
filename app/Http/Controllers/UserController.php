@@ -5,6 +5,7 @@ use App\Models\User;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -57,6 +58,16 @@ class UserController extends Controller
         ]);
 
         return redirect()->route('users.show', ['user' => $user->id]);
+    }
+
+    public function userLogout(Request $request)
+    {
+        Auth::logout();
+        
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 
     public function userDelete(User $user){

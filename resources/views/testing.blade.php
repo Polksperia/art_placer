@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>TESTING</title>
-</head>
-<body>
-    <h1>Painters Table</h1>
-    <table border="1">
+@extends('master-clean')
+
+@section('title', 'ADMIN VIEW')
+
+@section('content')
+<h1>Painters Table</h1>
+<div class="table-responsive">
+    <table class="table table-dark table-striped">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Genre</th>
                 <th>Nationality</th>
                 <th>Wikipedia</th>
                 <th>Image Link</th>
@@ -21,7 +20,6 @@
                 <tr>
                     <td>{{ $painter->id }}</td>
                     <td>{{ $painter->name }}</td>
-                    <td>{{ $painter->genre }}</td>
                     <td>{{ $painter->nationality }}</td>
                     <td>{{ $painter->wikipedia }}</td>
                     <td>{{ $painter->image_link }}</td>
@@ -29,16 +27,16 @@
             @endforeach
         </tbody>
     </table>
-    <h1>User Table</h1>
-    <table border="1">
+</div>
+<h1>User Table</h1>
+<div class="table-responsive">
+    <table class="table table-dark table-striped">
         <thead>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Highest Streak</th>
-                <th>Playsets Completed</th>
-                <th>Playsets Created</th>
             </tr>
         </thead>
         <tbody>
@@ -48,11 +46,9 @@
                     <td>{{ $user->username }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->highest_streak }}</td>
-                    <td>{{ $user->playsets_completed }}</td>
-                    <td>{{ $user->playsets_created }}</td>
                 </tr>
             @endforeach
         </tbody>
     </table>
-</body>
-</html>
+</div>
+@endsection

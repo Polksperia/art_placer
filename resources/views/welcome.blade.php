@@ -25,7 +25,7 @@
         <div class="main-bg text-white py-4 px-5">
             <h1 class="font-weight-bold text-uppercase outlined-text" style="font-family: 'Squada One', sans-serif; font-size: 8rem;">ArtPlacer</h1>
             <div class="d-grid gap-4 col-6 mx-auto">
-                <a href="/game" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
+                <a href="/initialize" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
                 font-family: 'Days One', sans-serif;">Play Now</a>
                 <a href="/leaderboard" class="btn btn-primary btn-sm rounded-pill" style="--bs-btn-font-size: 1.5rem;
                 font-family: 'Days One', sans-serif;">Leaderboard</a>

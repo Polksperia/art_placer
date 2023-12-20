@@ -5,7 +5,7 @@ use App\Models\User;
 
 use Illuminate\Http\Request;
 
-class SessionController extends Controller
+class MainController extends Controller
 {
     public function index()
     {

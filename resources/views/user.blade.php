@@ -23,6 +23,9 @@
                         <a href="{{ route('users.edit', ['user' => $user->id]) }}" class="btn btn-primary btn-sm rounded-pill me-2" style="--bs-btn-font-size: 1.5rem; font-family: 'Days One', sans-serif;">Edit Account</a>
                     </div>
                     <div style="display: inline-block;">
+                        <a href="{{ route('users.logout', ['user' => $user->id]) }}" class="btn btn-primary btn-sm rounded-pill me-2" style="--bs-btn-font-size: 1.5rem; font-family: 'Days One', sans-serif;">Logout</a>
+                    </div>
+                    <div style="display: inline-block;">
                         <form action="{{ route('users.destroy', ['user' => $user->id]) }}" method="POST">
                             @method('DELETE')
                             @csrf
